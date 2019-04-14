@@ -1,6 +1,6 @@
 " General settings {{{
- scriptencoding utf-16      " allow emojis in vimrc
- syntax on                  " syntax highlighting
+  scriptencoding utf-16      " allow emojis in vimrc
+  syntax on                  " syntax highlighting
 " }}}
 
 "  Behavior Modification ----------------------  {{{
@@ -43,8 +43,8 @@
     set visualbell
 
   " wildmenu
-     set wildmenu                        " enable wildmenu
-     set wildmode=list:longest,list:full " configure wildmenu
+    set wildmenu                        " enable wildmenu
+    set wildmode=list:longest,list:full " configure wildmenu
 
   " selipboard registry will be set to plus
   " you need xsel or xclip installed
