@@ -36,7 +36,7 @@
   set shiftround        " Round indent to multiple of 'shiftwidth'
   set termguicolors     " enable true colors
   set hidden            " enable hidden unsaved buffers
-  set ttyfast           " should make scrolling faster
+  set ttyfast           " should make ing faster
   set lazyredraw        " should make scrolling faster
 
   " visual bell for errors
@@ -307,7 +307,7 @@
     nmap <Leader>f <Plug>(easymotion-overwin-f)
 
   " s{char}{char} to move to {char}{char}
-    nmap s <Plug>(easymotion-overwin-f2)
+    nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
   " Move to line
     map <Leader>L <Plug>(easymotion-bd-jk)
@@ -411,7 +411,29 @@ endif
   hi vertsplit guifg=fg guibg=bg
 " }}
 
-" For NeoVim ----------------------------------------------------- {{{
+"  Key Mappings -------------------------------------------------- {{{
   " Remove highlight all search pattern matches
     map <silent> <ESC> :nohlsearch<CR>
+
+  " close brackets
+    inoremap () ()<C-c>i
+    inoremap {} {}<C-c>i
+    inoremap [] []<C-c>i
+
+    inoremap (; ();<C-c>hi
+    inoremap (, (),<C-c>hi
+    inoremap {; {};<C-c>hi
+    inoremap {, {},<C-c>hi
+    inoremap [; [];<C-c>hi
+    inoremap [, [],<C-c>hi
+
+    inoremap (<CR>; (<CR>);<C-c>O
+    inoremap (<CR>, (<CR>),<C-c>O
+    inoremap {<CR>; {<CR>};<C-c>O
+    inoremap {<CR>, {<CR>},<C-c>O
+    inoremap [<CR>; [<CR>];<C-c>O
+    inoremap [<CR>, [<CR>],<C-c>O
+" }}
+
+" For NeoVim ----------------------------------------------------- {{{
 " }}}
