@@ -150,25 +150,22 @@
   let g:airline_theme='onedark'
   let g:airline_powerline_fonts = 1
 
-"let g:airline#extensions#branch#enabled = 0
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-"let g:airline#extensions#tabline#show_buffers = 0
-"let g:airline_left_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_mode_map = {
-"      \ '__' : '-',
-"      \ 'n'  : 'N',
-"      \ 'i'  : 'I',
-"      \ 'R'  : 'R',
-"      \ 'c'  : 'C',
-"      \ 'v'  : 'V',
-"      \ 'V'  : 'V',
-"      \ '' : 'V',
-"      \ 's'  : 'S',
-"      \ 'S'  : 'S',
-"      \ '' : 'S',
-"      \ }
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+  let g:airline#extensions#tabline#show_buffers = 0
+  let g:airline_mode_map = {
+        \ '__' : '-',
+        \ 'n'  : 'N',
+        \ 'i'  : 'I',
+        \ 'R'  : 'R',
+        \ 'c'  : 'C',
+        \ 'v'  : 'V',
+        \ 'V'  : 'VL',
+        \ '' : 'VB',
+        \ 's'  : 'S',
+        \ 'S'  : 'S',
+        \ '' : 'S',
+        \ }
 
 " =====================================
 "  FZF
