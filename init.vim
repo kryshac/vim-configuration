@@ -433,6 +433,16 @@ endif
     inoremap {<CR>, {<CR>},<C-c>O
     inoremap [<CR>; [<CR>];<C-c>O
     inoremap [<CR>, [<CR>],<C-c>O
+
+    " surround
+    " Ctrl-s ( --> (|)
+    " Ctrl-s [ --> [ | ]
+    " Ctrl-s ] --> [|]
+    " Ctrl-s <div> --> <div>|</div>
+    " Ctrl-s-s { -->
+    " {
+    "   |
+    " }
 " }}
 
 " For NeoVim ----------------------------------------------------- {{{
