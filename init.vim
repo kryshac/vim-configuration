@@ -380,8 +380,8 @@
   " move up a directory with "-" like using vim-vinegar (usually "u" does that)
 
 " Load all plugins ------------------------------- {{{
-if filereadable(expand("~/.config/nvim/init.vim.bundles"))
-  source ~/.config/nvim/init.vim.bundles
+if filereadable(expand("~/.config/nvim/bundles.vim"))
+  source ~/.config/nvim/bundles.vim
 endif
 " }}}
 
