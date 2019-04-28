@@ -56,35 +56,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 " JavaScript: {{{
   " JavaScript support (required by vim-jsx)
   Plug 'pangloss/vim-javascript'
-
-  " React:
-    " JSX support for react components
-    Plug 'mxw/vim-jsx'
-
-    " A Vim plugin that provides functions that modify React source files 
-    Plug 'mvolkmann/vim-react', { 'for': 'javascript.jsx' }
-
-    " extract partial render, rename tag, select self close tags
-    Plug 'samuelsimoes/vim-jsx-utils', { 'for': 'javascript.jsx' }
-
-  " JSON manipulation
-  Plug 'tpope/vim-jdaddy', { 'for': 'json' }
-
-  " syntax highlighting for styled components
-  Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': 'javascript.jsx' }
 " }}}
 
 " TypeScript: {{{
   " Syntax for typescript
     Plug 'HerringtonDarkholme/yats.vim'
-    Plug 'leafgarland/typescript-vim'
-
-  " Language service plugin for typescript
-    Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-
-  " For Denite features
-  " you need python-neovim
-    Plug 'Shougo/denite.nvim'
 
   " Intellisense engine
     Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
