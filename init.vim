@@ -111,12 +111,6 @@
   nnoremap <C-w>r :WinResizerStartResize<CR>
 
 " ====================================
-" YouCompleteMe:
-" ====================================
-  set completeopt-=preview
-  let g:ycm_add_preview_to_completeopt = 0
-
-" ====================================
 " Ultisnips:
 " ====================================
   let g:UltiSnipsJumpForwardTrigger="<TAB>"

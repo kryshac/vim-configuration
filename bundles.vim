@@ -8,13 +8,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'junegunn/fzf.vim'
 " }}}
 
-" YouCompleteMe: {{{
-  " after PlugInstall
-  " cd ~/.local/share/nvim/plugged/youcompleteme
-  " ./install.py 
-    Plug 'valloric/youcompleteme'
-" }}}
-
 " TimPope: {{{
   " Surround text with closures
     Plug 'tpope/vim-surround'
