@@ -379,6 +379,44 @@ if filereadable(expand("~/.config/nvim/bundles.vim"))
 endif
 " }}}
 
+" ----------------------------------------------------------------------------
+" Coc.nvim
+" ----------------------------------------------------------------------------
+  " To get correct comment highlight in coc-settings, add:
+    autocmd FileType json syntax match Comment +\/\/.\+$+
+
+  " use <tab> for trigger completion and navigate to the next complete item
+    function! s:check_back_space() abort
+      let col = col('.') - 1
+      return !col || getline('.')[col - 1]  =~ '\s'
+    endfunction
+
+    inoremap <silent><expr> <TAB>
+          \ pumvisible() ? "\<C-n>" :
+          \ <SID>check_back_space() ? "\<TAB>" :
+          \ coc#refresh()
+
+    inoremap <silent><expr> <S-TAB>
+          \ pumvisible() ? "\<C-p>" :
+          \ <SID>check_back_space() ? "\<S-TAB>" :
+          \ coc#refresh()
+
+    inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+  " coc extensions
+    let g:coc_global_extensions = [
+      \ 'coc-tsserver',
+      \ 'coc-tslint-plugin',
+      \ 'coc-angular',
+      \ 'coc-vetur',
+      \ 'coc-html',
+      \ 'coc-css',
+      \ 'coc-emmet',
+      \ 'coc-json',
+      \ 'coc-snippets'
+      \ ]
+" }}}
+
 " UI Customizations --------------------------------{{{
 
   set background=dark

@@ -18,15 +18,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " }}}
 
 " Snippets: {{{
-  " ES2015 code snippets (Optional)
-    Plug 'epilande/vim-es2015-snippets', { 'for': ['javascript', 'javascript.jsx'] }
-
-  " React code snippets
-    Plug 'epilande/vim-react-snippets', { 'for': ['javascript', 'javascript.jsx'] }
-
-  " vim snippets for Ulti ...
-    Plug 'honza/vim-snippets'
-
   " modern snippets for vim
     Plug 'SirVer/ultisnips'
 " }}}
@@ -53,6 +44,11 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'haya14busa/incsearch-easymotion.vim'
 " }}}
 
+" Coc.vim: {{{
+  " Intellisense engine
+    Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+" }}}
+
 " JavaScript: {{{
   " JavaScript support (required by vim-jsx)
   Plug 'pangloss/vim-javascript'
@@ -61,9 +57,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " TypeScript: {{{
   " Syntax for typescript
     Plug 'HerringtonDarkholme/yats.vim'
-
-  " Intellisense engine
-    Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 " }}}
 
 " Airline {{{
